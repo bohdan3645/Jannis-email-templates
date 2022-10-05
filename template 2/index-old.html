@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta
+			http-equiv="Content-Type"
+			content="text/html; charset=utf-8"
+		/>
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Email Template | Newsletter</title>
+		<style type="text/css">
+			/*
+				table of contents:
+
+				-- GENERAL
+				-- ARTICLE DETAILS
+				-- LAYOUT
+				-- INDENTS
+				-- BUTTONS
+				-- BANNER
+				-- JOURNEY
+				-- QUOTE
+				-- CONTACT
+			*/
+
+			/* GENERAL */
+			body {
+				margin: 0;
+				font-family: 'Arial', sans-serif;
+				line-height: 135%;
+				font-weight: 300;
+				font-size: 23px;
+				color: #383939;
+			}
+
+			table {
+				border-spacing: 0;
+				width: 100%;
+			}
+
+			td {
+				padding: 0;
+			}
+
+			img {
+				border: 0;
+				width: 100%;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			a {
+				margin: 0;
+			}
+
+			h1 {
+				font-size: 53px;
+				line-height: 95%;
+				margin: 26px 0 26px;
+			}
+
+			h2 {
+				font-size: 31px;
+				margin-bottom: 15px;
+			}
+
+			h3 {
+				font-size: 23px;
+			}
+
+			.base1 {
+				font-size: 18px;
+				color: #888888;
+				line-height: 150%;
+			}
+
+			.base2 {
+				font-size: 16px;
+				color: #888888;
+				line-height: 145%;
+			}
+
+			a {
+				font-size: 19px;
+			}
+
+			li {
+				font-size: 18px;
+				color: #888888;
+				line-height: 150%;
+			}
+
+			.wrapper {
+				width: 100%;
+				table-layout: fixed;
+				background-color: #f5f5f5;
+			}
+
+			.main {
+				width: 100%;
+				max-width: 600px;
+			}
+
+			.image-rounded {
+				border-radius: 8px;
+			}
+
+			/* ARTICLE DETAILS */
+
+			.article-details {
+				font-size: 14px;
+			}
+
+			.span-font-big {
+				font-size: 18px;
+			}
+
+			.span-blue {
+				color: #0073ff;
+			}
+
+			.span-m-20 {
+				margin-right: 20px;
+			}
+
+			.span-m-10 {
+				margin-right: 10px;
+			}
+
+			.clock-icon {
+				width: 14px;
+				vertical-align: top;
+				padding-top: 8px;
+				padding-right: 2px;
+			}
+
+			.word-break {
+				word-break: break-all;
+			}
+
+			/* LAYOUT */
+
+			.content-padding {
+				padding: 75px 10%;
+			}
+
+			.column {
+				width: 100%;
+				max-width: 40%;
+				display: inline-block;
+				line-height: normal;
+			}
+
+			/* INDENTS*/
+
+			.pt-40 {
+				padding-top: 40px;
+			}
+
+			.mt-20 {
+				margin-top: 20px;
+			}
+
+			.mt-30 {
+				margin-top: 30px;
+			}
+
+			.mt-40 {
+				margin-top: 40px;
+			}
+
+			.mt-50 {
+				margin-top: 50px;
+			}
+
+			.mb-10 {
+				margin-bottom: 10px;
+			}
+
+			.mb-15 {
+				margin-bottom: 15px;
+			}
+
+			.mb-20 {
+				margin-bottom: 20px;
+			}
+
+			.mb-30 {
+				margin-bottom: 30px;
+			}
+
+			.mb-35 {
+				margin-bottom: 35px;
+			}
+
+			.mb-40 {
+				margin-bottom: 40px;
+			}
+
+			.mb-45 {
+				margin-bottom: 45px;
+			}
+
+			.mb-50 {
+				margin-bottom: 50px;
+			}
+
+			/* BUTTONS */
+
+			.button {
+				display: inline-block;
+				text-decoration: none;
+				color: #383939;
+			}
+
+			.button span {
+				margin-left: 10px;
+				font-size: 120%;
+			}
+
+			.green-button {
+				padding: 8px 20px;
+				border-radius: 100px;
+				color: #fff;
+				border: 1px solid #d0ff00;
+			}
+
+			.arrow-down img {
+				width: 13px;
+				vertical-align: top;
+				padding-top: 9px;
+			}
+
+			.arrow-right img {
+				width: 17px;
+				vertical-align: top;
+				padding-top: 11px;
+			}
+
+			.blue-button {
+				padding: 8px 20px;
+				border-radius: 100px;
+				color: #383939;
+				border: 1px solid #0073ff;
+			}
+
+			.plain-button {
+				color: #0073ff;
+			}
+
+			/* BANNER */
+
+			.banner {
+				background-color: #9f9f9f;
+				background-image: url('./assets/banner-img.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				color: #fff;
+			}
+
+			.banner-content {
+				padding: 27% 10% 80px 10%;
+			}
+
+			.banner-text {
+				font-size: 27px;
+			}
+
+			.social img {
+				width: 40px;
+				margin-right: 15px;
+			}
+
+			/* JOURNEY */
+
+			.journey-content {
+				background-color: #fff;
+			}
+
+			/* QUOTE */
+
+			.quote-sign {
+				color: #0073ff;
+				font-size: 65px;
+			}
+
+			.quote-text {
+				text-align: center;
+				font-size: 28px;
+				line-height: 200%;
+				padding: 0 20px 0 20px;
+			}
+
+			.closing-quote-sign {
+				margin-top: 20px;
+				text-align: right;
+			}
+
+			.quote-black {
+				color: #383939;
+			}
+
+			.quote-blue {
+				color: #0073ff;
+			}
+
+			.quote-author {
+				padding: 0 20px 0 20px;
+			}
+
+			/* CONTACT */
+
+			.contact {
+				background-color: #fff;
+			}
+
+			.contact p {
+				font-size: 20px;
+			}
+
+			.encouragement {
+				color: #d0e4fd;
+			}
+
+			.contact a {
+				color: #0073ff;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			table of contents:
+
+			-- BANNER
+			-- JOURNEY
+			-- QUOTE
+			-- CONTACT
+		-->
+
+		<center class="wrapper">
+			<table
+				class="main"
+				width="100%"
+			>
+				<!-- BANNER -->
+
+				<tr>
+					<td class="banner">
+						<table>
+							<tr>
+								<td class="banner-content">
+									<p>J4RVIS</p>
+									<h1>
+										Webinar ahead: The Future of Digital
+										Tran<span class="word-break">s</span
+										>formation
+									</h1>
+									<p class="banner-text">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. In purus nulla, auctor
+										eget enim vel.
+									</p>
+									<a
+										href="#"
+										class="button green-button mt-40"
+										>Sign up<span class="arrow-right"
+											><img
+												src="./assets/white-arrow-right.png"
+												alt="→" /></span
+									></a>
+									<p class="social mt-30">
+										<a href="#"
+											><img
+												src="./assets/facebook-icon.png"
+												alt="facebook-icon" /></a
+										><a href="#"
+											><img
+												src="./assets/twitter-icon.png"
+												alt="twitter-icon" /></a
+										><a href="#"
+											><img
+												src="./assets/linkedin-icon.png"
+												alt="linkedin-icon"
+										/></a>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- JOURNEY -->
+
+				<tr>
+					<td>
+						<img
+							src="./assets/image-1.jpg"
+							alt="Your IT
+							transformation journey"
+						/>
+						<table>
+							<tr>
+								<td class="journey-content content-padding">
+									<h3 class="mb-30">
+										We meet you where you’re at on your IT
+										transformation journey.
+									</h3>
+									<p class="base1">
+										Whether you’re reassessing your entire
+										system or looking to improve certain
+										parts of your processes – we work with
+										you to shape a strong strategy.
+									</p>
+									<p class="base1">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Mauris non mi
+										dignissim, lobortis est in, scelerisque
+										odio. Pellentesque scelerisque massa in
+										lectus varius, ullamcorper cursus velit
+										elementum. Donec mollis id enim eu
+										egestas. Suspendisse gravida, turpis nec
+										pulvinar dictum, lacus risus mattis
+										lacus, id imperdiet neque metus ut elit.
+									</p>
+									<ul>
+										<li>
+											Donec quis libero sit amet lorem
+											molestie
+										</li>
+										<li>Aliquet ut lobortis diam.</li>
+										<li>
+											Ut lacus eros, tempor vel
+											consectetur id, tristique malesuada
+											nibh.
+										</li>
+									</ul>
+									<p class="base1">
+										Maecenas mattis nunc sit amet nisi
+										tristique euismod. Quisque semper
+										feugiat tellus, commodo cursus ex rutrum
+										eget.
+									</p>
+									<a
+										href="#"
+										class="button blue-button mt-40"
+										>Sign up<span class="arrow-right"
+											><img
+												src="./assets/blue-arrow-right.png"
+												alt="→" /></span
+									></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- QUOTE -->
+
+				<tr>
+					<td class="content-padding">
+						<p class="quote-sign">“</p>
+						<h3 class="quote-text">
+							As well as gaining an agile, reliable foundation for
+							growth, we’ve also gained a strategic partner that
+							understands our vision and knows how to make that a
+							reality.
+						</h3>
+						<p class="quote-sign closing-quote-sign">”</p>
+						<table>
+							<tr>
+								<td class="quote-author"><p class="base1 quote-black">David Gunn</p>
+									<p class="base2 quote-blue">Head of IT</p>
+									<p class="base2">Grilled</p>
+								</td></td>
+							</tr>
+						</table>
+						
+				</tr>
+
+				<!-- CONTACT -->
+
+				<tr>
+					<td class="contact content-padding">
+						<h2>We’re ready to go.</h2>
+						<a
+							href="#"
+							class="button blue-button mt-20 mb-40"
+							>Let’s get started<span class="arrow-right"
+								><img
+									src="./assets/blue-arrow-right.png"
+									alt="→" /></span
+						></a>
+						<table>
+							<tr>
+								<td>
+									<table class="column">
+										<tr>
+											<td>
+												<p>1300 528 220</p>
+											</td>
+										</tr>
+									</table>
+									<table class="column">
+										<tr>
+											<td>
+												<a href="#">hello@j4rvis.com</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<p class="mb-30">
+							The Commons 388 George Street Sydney, NSW 2000
+						</p>
+						<h2 class="encouragement mb-30">
+							For a better tomorrow.
+						</h2>
+						<p>Don’t want to receive any more emails?</p>
+						<a href="#">Unsubscribe from this email</a>
+					</td>
+				</tr>
+			</table>
+			<!-- End Main Class -->
+		</center>
+		<!-- End Wrapper -->
+	</body>
+</html>

@@ -31,6 +31,7 @@
 				-- KEY SERVICES
 				-- ABOUT
 				-- CONTACT
+				-- MEDIA QUERIES
 			*/
 
 			/* GENERAL */
@@ -39,7 +40,7 @@
 				font-family: 'Arial', sans-serif;
 				line-height: 135%;
 				font-weight: 300;
-				font-size: 23px;
+				font-size: 20px;
 				color: #383939;
 			}
 
@@ -53,7 +54,6 @@
 			}
 
 			img {
-				border: 0;
 				width: 100%;
 			}
 
@@ -61,42 +61,39 @@
 			h2,
 			h3,
 			h4,
-			h5,
-			h6,
-			p,
-			a {
+			p {
 				margin: 0;
 			}
 
 			h1 {
-				font-size: 52px;
+				font-size: 45px;
 				line-height: 95%;
-				margin: 26px 0 26px;
+				padding: 26px 0 46px;
 			}
 
 			h2 {
-				font-size: 31px;
-				margin-bottom: 15px;
+				font-size: 28px;
+				padding: 0 0 15px 0;
 			}
 
 			h3 {
-				font-size: 19px;
+				font-size: 18px;
 			}
 
 			.base1 {
-				font-size: 18px;
+				font-size: 16px;
 				color: #888888;
 				line-height: 150%;
 			}
 
 			.base2 {
-				font-size: 16px;
+				font-size: 14px;
 				color: #888888;
 				line-height: 145%;
 			}
 
 			a {
-				font-size: 19px;
+				font-size: 18px;
 			}
 
 			.wrapper {
@@ -129,31 +126,57 @@
 			}
 
 			.span-m-20 {
-				margin-right: 20px;
+				padding: 0 20px;
 			}
 
 			.span-m-10 {
-				margin-right: 10px;
+				padding: 0 10px;
 			}
 
 			.clock-icon {
 				width: 14px;
 				vertical-align: top;
-				padding-top: 8px;
-				padding-right: 2px;
+				padding: 5px 0 0 0;
+			}
+
+			.clock-icon-two-column {
+				width: 14px;
+				vertical-align: top;
+				padding: 0;
 			}
 
 			/* LAYOUT */
 
 			.content-padding {
-				padding: 75px 10%;
+				padding: 75px 25px;
 			}
 
 			.column {
 				width: 100%;
-				max-width: 40%;
+				max-width: 290px;
 				display: inline-block;
 				line-height: normal;
+				text-align: left;
+				padding: 10px;
+				vertical-align: top;
+			}
+
+			.column-smaller {
+				width: 100%;
+				max-width: 200px;
+				display: inline-block;
+				line-height: normal;
+				vertical-align: top;
+			}
+
+			.two-columns {
+				text-align: center;
+				font-size: 0;
+			}
+
+			.three-columns {
+				text-align: center;
+				font-size: 0;
 			}
 
 			.column-narrow {
@@ -161,67 +184,64 @@
 				max-width: 125px;
 				display: inline-block;
 				line-height: normal;
+				padding: 0 5px;
 			}
 			.column-wide {
 				width: 100%;
 				max-width: 175px;
 				display: inline-block;
-				padding-top: 5px;
+				padding: 5px 5px 0 5px;
 				vertical-align: top;
 			}
 
 			/* INDENTS*/
 
+			.pt-20 {
+				padding: 20px 0 0 0;
+			}
+
+			.pt-30 {
+				padding: 30px 0 0 0;
+			}
+
 			.pt-40 {
-				padding-top: 40px;
+				padding: 40px 0 0 0;
 			}
 
-			.mt-20 {
-				margin-top: 20px;
+			.pt-50 {
+				padding: 50px 0 0 0;
 			}
 
-			.mt-30 {
-				margin-top: 30px;
+			.pb-10 {
+				padding: 0 0 10px;
 			}
 
-			.mt-40 {
-				margin-top: 40px;
+			.pb-15 {
+				padding: 0 0 15px;
 			}
 
-			.mt-50 {
-				margin-top: 50px;
+			.pb-20 {
+				padding: 0 0 20px;
 			}
 
-			.mb-10 {
-				margin-bottom: 10px;
+			.pb-30 {
+				padding: 0 0 30px;
 			}
 
-			.mb-15 {
-				margin-bottom: 15px;
+			.pb-35 {
+				padding: 0 0 35px;
 			}
 
-			.mb-20 {
-				margin-bottom: 20px;
+			.pb-40 {
+				padding: 0 0 40px;
 			}
 
-			.mb-30 {
-				margin-bottom: 30px;
+			.pb-45 {
+				padding: 0 0 45px;
 			}
 
-			.mb-35 {
-				margin-bottom: 35px;
-			}
-
-			.mb-40 {
-				margin-bottom: 40px;
-			}
-
-			.mb-45 {
-				margin-bottom: 45px;
-			}
-
-			.mb-50 {
-				margin-bottom: 50px;
+			.pb-50 {
+				padding: 0 0 50px;
 			}
 
 			/* BUTTONS */
@@ -233,7 +253,7 @@
 			}
 
 			.button span {
-				margin-left: 10px;
+				padding: 0 0 0 10px;
 				font-size: 120%;
 			}
 
@@ -247,13 +267,13 @@
 			.arrow-down img {
 				width: 13px;
 				vertical-align: top;
-				padding-top: 9px;
+				padding: 6px 0 0 0;
 			}
 
 			.arrow-right img {
 				width: 17px;
 				vertical-align: top;
-				padding-top: 11px;
+				padding: 8px 0 0 0;
 			}
 
 			.blue-button {
@@ -278,17 +298,18 @@
 			}
 
 			.banner-content {
-				padding: 27% 10% 80px 10%;
-			}
-
-			.banner-text {
-				font-size: 27px;
+				padding: 150px 25px 80px 25px;
 			}
 
 			/* HIGHLIGHTS */
 
 			.highlights {
+				padding: 75px 10px;
 				background-color: #fff;
+			}
+
+			.highlights-content {
+				padding: 0 15px;
 			}
 
 			/* INSIGHTS */
@@ -331,15 +352,15 @@
 
 			.key-services img {
 				width: 55px;
-				margin-bottom: 15px;
+				padding: 0 0 15px;
 			}
 
 			.key-services p {
-				margin-bottom: 10px;
+				padding: 0 0 10px;
 			}
 
 			.key-services .base2 {
-				margin-bottom: 40px;
+				padding: 0 0 40px;
 			}
 
 			/* ABOUT */
@@ -376,6 +397,94 @@
 				color: #0073ff;
 				text-decoration: none;
 			}
+
+			.no-wrap {
+				white-space: nowrap;
+			}
+
+			.column-contact {
+				width: 100%;
+				max-width: 230px;
+				display: inline-block;
+			}
+
+			/* MEDIA QUERIES */
+
+			@media screen and (min-width: 500px) {
+				.banner-content {
+					padding: 150px 45px 80px 45px;
+				}
+
+				.content-padding {
+					padding: 75px 45px;
+				}
+
+				.highlights-content {
+					padding: 0 35px;
+				}
+			}
+
+			@media screen and (min-width: 600px) {
+				.arrow-right img {
+					padding: 10px 0 0 0;
+				}
+
+				.two-columns {
+					text-align: center;
+					font-size: 0;
+					padding: 0 50px;
+				}
+
+				.column {
+					max-width: 235px;
+				}
+
+				.banner-content {
+					padding: 150px 75px 80px 75px;
+				}
+
+				.content-padding {
+					padding: 75px 75px;
+				}
+
+				.highlights-content {
+					padding: 0 65px;
+				}
+
+				body {
+					font-size: 23px;
+				}
+
+				h1 {
+					font-size: 52px;
+				}
+
+				h2 {
+					font-size: 31px;
+				}
+
+				h3 {
+					font-size: 19px;
+				}
+
+				.base1 {
+					font-size: 18px;
+				}
+
+				.base2 {
+					font-size: 16px;
+				}
+
+				a {
+					font-size: 19px;
+				}
+
+				.clock-icon {
+					width: 14px;
+					vertical-align: top;
+					padding: 8px 0 0 0;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -406,15 +515,9 @@
 								<td class="banner-content">
 									<p>J4RVIS</p>
 									<h1>Our latest news and insights</h1>
-									<p class="banner-text">
-										Here, you’ll find our most up-to-date IT
-										transformation journeys, our findings
-										(shh!), resources and everything in
-										between.
-									</p>
 									<a
 										href="#"
-										class="button green-button mt-40"
+										class="button green-button"
 										>Have a browse<span class="arrow-down"
 											><img
 												src="./assets/green-arrow-down.png"
@@ -429,56 +532,122 @@
 				<!-- HIGHLIGHTS -->
 
 				<tr>
-					<td class="highlights content-padding">
+					<td class="highlights">
 						<table>
 							<tr>
-								<td>
+								<td class="highlights-content">
 									<h2>This week’s highlights</h2>
-									<p class="mb-40">
+									<p class="pb-40">
 										We empower people to make confident
 										technology decisions.
 									</p>
+									<p class="pb-20">Company updates</p>
 								</td>
 							</tr>
+						</table>
+						<table class="two-columns">
 							<tr>
 								<td>
-									<p class="mb-20">Company updates</p>
-									<img
-										class="image-rounded mb-30"
-										src="./assets/image-1.jpg"
-										alt=""
-									/>
-									<p class="article-details mb-15">
-										<span class="span-m-20">
-											Company Updates</span
-										>
-										<img
-											src="./assets/clock.png"
-											alt="clock icon"
-											class="clock-icon"
-										/>
-										<span class="span-m-10">5 mins</span
-										><span class="span-m-10"> | </span>
-										<span class="span-m-10">03/07/22</span>
-									</p>
-									<p class="mb-15">
-										We meet you where you’re at on your IT
-										transformation journey.
-									</p>
-									<p class="base1">
-										Whether you’re reassessing your entire
-										system or looking to improve certain
-										parts of your processes – we work with
-										you to shape a strong strategy.
-									</p>
-									<a
-										href="#"
-										class="button blue-button mt-20"
-										>Read more<span class="arrow-right"
-											><img
-												src="./assets/blue-arrow-right.png"
-												alt="→" /></span
-									></a>
+									<table class="column">
+										<tr>
+											<td>
+												<img
+													class="image-rounded pb-30"
+													src="./assets/image-1.jpg"
+													alt=""
+												/>
+												<p
+													class="article-details pb-15"
+												>
+													<img
+														src="./assets/clock.png"
+														alt="clock icon"
+														class="clock-icon-two-column"
+													/>
+													<span class="span-m-10"
+														>5 mins</span
+													><span class="span-m-10">
+														|
+													</span>
+													<span class="span-m-10"
+														>03/07/22</span
+													>
+												</p>
+												<p class="pb-15">
+													We meet you where you’re at
+													on your IT transformation
+													journey.
+												</p>
+												<p class="base1 pb-20">
+													Whether you’re reassessing
+													your entire system or
+													looking to improve certain
+													parts of your processes – we
+													work with you to shape a
+													strong strategy.
+												</p>
+												<a
+													href="#"
+													class="button blue-button"
+													>Read more<span
+														class="arrow-right"
+														><img
+															src="./assets/blue-arrow-right.png"
+															alt="→" /></span
+												></a>
+											</td>
+										</tr>
+									</table>
+									<table class="column">
+										<tr>
+											<td>
+												<img
+													class="image-rounded pb-30"
+													src="./assets/image-1.jpg"
+													alt=""
+												/>
+												<p
+													class="article-details pb-15"
+												>
+													<img
+														src="./assets/clock.png"
+														alt="clock icon"
+														class="clock-icon-two-column"
+													/>
+													<span class="span-m-10"
+														>5 mins</span
+													><span class="span-m-10">
+														|
+													</span>
+													<span class="span-m-10"
+														>03/07/22</span
+													>
+												</p>
+												<p class="pb-15">
+													We meet you where you’re at
+													on your IT transformation
+													journey.
+												</p>
+												<p class="base1 pb-20">
+													Whether you’re reassessing
+													your entire system or
+													looking to improve certain
+													parts of your processes – we
+													work with you to shape a
+													strong strategy.
+												</p>
+												<a
+													href="#"
+													class="button blue-button"
+													>Read more<span
+														class="arrow-right"
+														><img
+															src="./assets/blue-arrow-right.png"
+															alt="→" /></span
+												></a>
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
@@ -495,7 +664,7 @@
 							</tr>
 							<tr>
 								<td>
-									<p class="article-details mb-10">
+									<p class="article-details pb-10">
 										<span class="span-m-20 span-blue">
 											Insights</span
 										>
@@ -512,7 +681,7 @@
 										How to Supercharge Your Digital
 										Transformation with MuleSoft
 									</h3>
-									<p class="base2 mb-15">
+									<p class="base2 pb-15">
 										Get a behind-the-scenes look at how your
 										business can leverage MuleSoft to reach
 										your digital goals sooner than you
@@ -520,7 +689,7 @@
 									</p>
 									<a
 										href="#"
-										class="button plain-button mb-40"
+										class="button plain-button pb-40"
 										>Read now<span class="arrow-right"
 											><img
 												src="./assets/blue-arrow-right.png"
@@ -530,7 +699,7 @@
 							</tr>
 							<tr>
 								<td>
-									<p class="article-details mb-30">
+									<p class="article-details pb-30">
 										<span class="span-m-20 span-blue">
 											Insights</span
 										>
@@ -547,7 +716,7 @@
 										5 Reasons Your Retail Business Needs a
 										Smart API Strategy
 									</h3>
-									<p class="base2 mb-15">
+									<p class="base2 pb-15">
 										Learn how to speed up time to market,
 										deliver better customer experiences, &
 										build supply chains using an innovative
@@ -575,7 +744,7 @@
 							<tr>
 								<td>
 									<h2>Case studies</h2>
-									<p class="mb-50">
+									<p class="pb-50">
 										We help organisations take the IT steps
 										they need to build a better tomorrow.
 									</p>
@@ -625,7 +794,7 @@
 									<table class="column-wide">
 										<tr>
 											<td>
-												<p class="mb-45">
+												<p class="pb-45">
 													new employees hired
 												</p>
 											</td>
@@ -636,11 +805,11 @@
 							<tr>
 								<td class="featured">
 									<img
-										class="image-rounded mb-30"
+										class="image-rounded pb-30"
 										src="./assets/image-2.jpg"
 										alt=""
 									/>
-									<p class="article-details mb-10">
+									<p class="article-details pb-10">
 										<span class="span-m-20">
 											Featured Case Study</span
 										>
@@ -653,11 +822,11 @@
 										><span class="span-m-10"> | </span>
 										<span class="span-m-10">03/07/22</span>
 									</p>
-									<p class="mb-10">
+									<p class="pb-10">
 										Client name: Dolet sed farmae elite per
 										dolet adnum
 									</p>
-									<p class="base1 font-white">
+									<p class="base1 font-white pb-20">
 										We implement end-to-end Salesforce and
 										MuleSoft solutions that help your
 										business grow. From strategy to support,
@@ -666,7 +835,7 @@
 									</p>
 									<a
 										href="#"
-										class="button green-button mt-30"
+										class="button green-button"
 										>Read more<span class="arrow-right"
 											><img
 												src="./assets/green-arrow-right.png"
@@ -675,10 +844,8 @@
 								</td>
 							</tr>
 							<tr>
-								<td class="category">
-									<p
-										class="article-details mb-10 mt-50 mb-20"
-									>
+								<td class="category pt-50">
+									<p class="article-details pb-20">
 										<span
 											class="span-m-20 span-blue span-font-big"
 											>Category</span
@@ -693,7 +860,7 @@
 										<span class="span-m-10">03/07/22</span>
 									</p>
 									<img
-										class="image-rounded mb-30"
+										class="image-rounded pb-30"
 										src="./assets/image-3.jpg"
 										alt=""
 									/>
@@ -701,7 +868,7 @@
 										5 Reasons Your Retail Business Needs a
 										Smart API Strategy
 									</h3>
-									<p class="base2 mb-15">
+									<p class="base2 pb-15">
 										Learn how to speed up time to market,
 										deliver better customer experiences, &
 										build supply chains using an innovative
@@ -709,7 +876,7 @@
 									</p>
 									<a
 										href="#"
-										class="button plain-button mb-30"
+										class="button plain-button pb-30"
 										>Read now<span class="arrow-right"
 											><img
 												src="./assets/blue-arrow-right.png"
@@ -720,7 +887,7 @@
 							<tr>
 								<td class="category">
 									<p
-										class="article-details mb-10 mt-40 mb-20"
+										class="article-details pb-10 pt-40 pb-20"
 									>
 										<span
 											class="span-m-20 span-blue span-font-big"
@@ -736,7 +903,7 @@
 										<span class="span-m-10">03/07/22</span>
 									</p>
 									<img
-										class="image-rounded mb-30"
+										class="image-rounded pb-30"
 										src="./assets/image-4.jpg"
 										alt=""
 									/>
@@ -744,7 +911,7 @@
 										How to Supercharge Your Digital
 										Transformation with MuleSoft
 									</h3>
-									<p class="base2 mb-15">
+									<p class="base2 pb-15">
 										Learn how to speed up time to market,
 										deliver better customer experiences, &
 										build supply chains using an innovative
@@ -768,19 +935,19 @@
 
 				<tr>
 					<td class="get-in-touch content-padding">
-						<h2 class="mb-30">
+						<h2 class="pb-30">
 							Want to know more about supercharging your digital
 							transformation with effective API integration and
 							management?
 						</h2>
-						<p class="base1 mb-20">
+						<p class="base1 pb-20">
 							Get in touch to see how J4RVIS and MuleSoft can help
 							fast-track your journey to an agile, scalable, and
 							data-driven business.
 						</p>
 						<a
 							href="#"
-							class="button blue-button mt-20"
+							class="button blue-button"
 							>Get in touch<span class="arrow-right"
 								><img
 									src="./assets/blue-arrow-right.png"
@@ -793,51 +960,64 @@
 
 				<tr>
 					<td class="key-services content-padding">
-						<h3 class="mb-40">
+						<h3 class="pb-40">
 							Our three key services empower you to make
 							significant technology decisions with confidence.
 						</h3>
-						<table>
+						<table class="three-columns">
 							<tr>
 								<td>
-									<img
-										src="./assets/strategy-icon.png"
-										alt="Strategy icon"
-									/>
-									<p>Strategy</p>
-									<p class="base2">
-										Using our industry knowledge, we analyse
-										your tech stack through a strategic
-										lens.
-									</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img
-										src="./assets/implementation-icon.png"
-										alt="Implementation icon"
-									/>
-									<p>Implementation</p>
-									<p class="base2">
-										Once we’re familiar with your
-										requirements and system architecture,
-										execution begins.
-									</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img
-										src="./assets/support-icon.png"
-										alt="Support icon"
-									/>
-									<p>Support</p>
-									<p class="base2">
-										We don’t just grease your IT wheels and
-										walk away; we invest in your long-term
-										system success.
-									</p>
+									<table class="column-smaller">
+										<tr>
+											<td>
+												<img
+													src="./assets/strategy-icon.png"
+													alt="Strategy icon"
+												/>
+												<p>Strategy</p>
+												<p class="base2">
+													Using our industry
+													knowledge, we analyse your
+													tech stack through a
+													strategic lens.
+												</p>
+											</td>
+										</tr>
+									</table>
+									<table class="column-smaller">
+										<tr>
+											<td>
+												<img
+													src="./assets/implementation-icon.png"
+													alt="Implementation icon"
+												/>
+												<p>Implementation</p>
+												<p class="base2">
+													Once we’re familiar with
+													your requirements and system
+													architecture, execution
+													begins.
+												</p>
+											</td>
+										</tr>
+									</table>
+									<table class="column-smaller">
+										<tr>
+											<td>
+												<img
+													src="./assets/support-icon.png"
+													alt="Support icon"
+												/>
+												<p>Support</p>
+												<p class="base2">
+													We don’t just grease your IT
+													wheels and walk away; we
+													invest in your long-term
+													system success.
+												</p>
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
@@ -855,13 +1035,13 @@
 						<table>
 							<tr>
 								<td class="about-content">
-									<p class="base2 mb-20">Who we are</p>
-									<h2 class="mb-30">
+									<p class="base2 pb-20">Who we are</p>
+									<h2 class="pb-30">
 										We’re empathic, down-to-earth,
 										dependable doers who enable genuine,
 										lasting IT change.
 									</h2>
-									<p class="base1">
+									<p class="base1 pb-40">
 										J4RVIS teams are motivated to find
 										valuable solutions that matter. We
 										believe successful operations come from
@@ -870,7 +1050,7 @@
 									</p>
 									<a
 										href="#"
-										class="button green-button mt-40"
+										class="button green-button"
 										>Have a browse<span class="arrow-right"
 											><img
 												src="./assets/green-arrow-right.png"
@@ -889,7 +1069,7 @@
 						<h2>We’re ready to go.</h2>
 						<a
 							href="#"
-							class="button blue-button mt-20 mb-40"
+							class="button blue-button pb-40"
 							>Let’s get started<span class="arrow-right"
 								><img
 									src="./assets/blue-arrow-right.png"
@@ -898,14 +1078,16 @@
 						<table>
 							<tr>
 								<td>
-									<table class="column">
+									<table class="column-contact">
 										<tr>
 											<td>
-												<p>1300 528 220</p>
+												<p class="pt-40 no-wrap">
+													1300 528 220
+												</p>
 											</td>
 										</tr>
 									</table>
-									<table class="column">
+									<table class="column-contact">
 										<tr>
 											<td>
 												<a href="#">hello@j4rvis.com</a>
@@ -915,10 +1097,10 @@
 								</td>
 							</tr>
 						</table>
-						<p class="mb-30">
+						<p class="pb-30">
 							The Commons 388 George Street Sydney, NSW 2000
 						</p>
-						<h2 class="encouragement mb-30">
+						<h2 class="encouragement pb-30">
 							For a better tomorrow.
 						</h2>
 						<p>Don’t want to receive any more emails?</p>
